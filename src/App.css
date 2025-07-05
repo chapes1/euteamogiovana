@@ -1,0 +1,90 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+body{
+  background: rgb(150, 80, 92);
+}
+
+.borda {
+  padding: 2px;
+}
+.img,
+.borda {
+  width: 500px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  --_m: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+  mask-border: var(--_m);
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+}
+
+/* fallback until better support for mask-border */
+@supports not (-webkit-mask-box-image: var(--_m)) {
+  .img,
+  .borda {
+    --_m: radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+      radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+      linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+  }
+}
+
+.borda {
+  background-color: rgb(153, 10, 34);
+}
+.body {
+  filter: drop-shadow(0 15px 100px rgb(230, 33, 66));
+}
+.fade {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+.message{
+  color: black;
+  font-family: Helvetica;
+  font-weight: 400px;
+  font-size: 20px;
+}
+.card{
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+.gif{
+  padding: 40px
+}
+
+.buttons button {
+  background-color: #FFA4AF;
+
+  color:rgb(153, 10, 34);
+}
+.heart13{
+  display: inline-block;
+  animation: heart13 1s infinite ease-in;
+}
+.heart24{
+  display: inline-block;
+  animation: heart24 1s infinite ease-in;
+}
+@keyframes heart13 {
+  0%   {color: red;}
+  50% {color: white;}
+  100% {color: red;}
+}
+@keyframes heart24 {
+  0%   {color: white;}
+  50%  {color: red;}
+  100%  {color: white;}
+}
