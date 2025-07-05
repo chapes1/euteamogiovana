@@ -11,7 +11,10 @@ export default function Inicio() {
       <div className="">
         <div className="card">
           <div className="message">
-            Lindas paisagens nos inspiram. O mar traz esperança. Mas você, minha linda e doce flor, me traz todo sentimento bom, mesmo que eu não queira. Você é meu sol, minha luz, o que eu mais desejei em uma pessoa.
+            <p>Você</p> é o som que ecoa no meu peito, 
+            <p>Você</p> é o riso que torna tudo perfeito.
+            <p>Você</p> é o céu quando o dia amanhece, 
+            <p>Você</p> é o sonho que nunca esquece.
           </div>
           <div className="gif">
             <img src={gifIloveYou} width="300" alt="I love you" />

@@ -56,6 +56,12 @@ body{
   font-weight: 400px;
   font-size: 20px;
 }
+.message > p {
+  display: inline-block;
+  line-height: 0px;
+  font-weight: 600;
+  animation: textChange 2s infinite;
+}
 .card{
   background-color: white;
   padding: 40px;
@@ -78,6 +84,7 @@ body{
   display: inline-block;
   animation: heart24 1s infinite ease-in;
 }
+
 @keyframes heart13 {
   0%   {color: red;}
   50% {color: white;}
@@ -87,4 +94,11 @@ body{
   0%   {color: white;}
   50%  {color: red;}
   100%  {color: white;}
+}
+@keyframes textChange {
+  0%   {font-family: Verdana;}
+  25%   {font-family: 'Comic Sans MS', cursive;;}
+  50%  {font-family: Impact, fantasy;}
+  75%  {font-family: 'Lucida Console', monospace;}
+  100%  {font-family: Tahoma}
 }
