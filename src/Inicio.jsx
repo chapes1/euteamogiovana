@@ -11,10 +11,10 @@ export default function Inicio() {
       <div className="">
         <div className="card">
           <div className="message">
-            <p>Você</p> é o som que ecoa no meu peito, 
-            <p>Você</p> é o riso que torna tudo perfeito.
-            <p>Você</p> é o céu quando o dia amanhece, 
-            <p>Você</p> é o sonho que nunca esquece.
+            <p>Você</p> é o som que ecoa na minha alma.
+            <p>Você</p> é o sorriso que aperfeiçoa tudo.
+            <p>Você</p> é o céu do meu peito, ou melhor, o ápice dele.
+            <p>Você</p> é o sonho da minha realidade, algo que almejei alcançar.
           </div>
           <div className="gif">
             <img src={gifIloveYou} width="300" alt="I love you" />
